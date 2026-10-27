@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brew &amp; Bloom Café</title>
+<meta name="description" content="A neighborhood café serving small-batch coffee, fresh pastries and slow mornings.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#top" class="logo">Brew &amp; Bloom</a>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#story">Our story</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <svg class="steam" viewBox="0 0 120 120" aria-hidden="true">
+      <path d="M40 100 C25 80 55 70 40 50 C28 34 48 26 40 10"/>
+      <path d="M62 100 C47 80 77 70 62 50 C50 34 70 26 62 10"/>
+      <path d="M84 100 C69 80 99 70 84 50 C72 34 92 26 84 10"/>
+    </svg>
+    <h1>Slow coffee for fast mornings.</h1>
+    <p>Small-batch beans, pastries baked before sunrise, and a table with your name on it.</p>
+    <div class="actions">
+      <a class="btn" href="#menu">See the menu</a>
+      <a class="btn ghost" href="#visit">Find us</a>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Menu</h2>
+    <div class="tabs" role="tablist">
+      <button role="tab" class="active" data-tab="coffee">Coffee</button>
+      <button role="tab" data-tab="tea">Tea &amp; other</button>
+      <button role="tab" data-tab="bakery">Bakery</button>
+    </div>
+    <ul class="items" id="items"></ul>
+  </section>
+
+  <section id="story" class="section story">
+    <h2>Our story</h2>
+    <div class="cols">
+      <p>We opened Brew &amp; Bloom in 2019 with one grinder, six stools and a belief that coffee tastes better when nobody is rushing you.</p>
+      <p>Our beans come from three farms we visit every year. We roast weekly in small lots, bake daily, and compost every scrap. Stay as long as you like.</p>
+    </div>
+  </section>
+
+  <section id="visit" class="section visit">
+    <div>
+      <h2>Visit</h2>
+      <p>12 Garden Lane<br>Your City, 000 000</p>
+      <p><a href="tel:+10000000000">+1 000 000 0000</a><br><a href="mailto:hello@brewandbloom.example">hello@brewandbloom.example</a></p>
+    </div>
+    <table class="hours">
+      <tr><td>Mon – Fri</td><td>7:00 – 18:00</td></tr>
+      <tr><td>Saturday</td><td>8:00 – 20:00</td></tr>
+      <tr><td>Sunday</td><td>8:00 – 16:00</td></tr>
+    </table>
+    <form id="news">
+      <label for="email">Get our weekly seasonal menu</label>
+      <div class="row">
+        <input id="email" type="email" placeholder="you@email.com" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </div>
+      <p id="msg" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Brew &amp; Bloom Café. Made with care.</footer>
+<script src="script.js"></script>
+</body>
+</html>
